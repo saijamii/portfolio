@@ -52,7 +52,7 @@ export const Footer = () => {
               <h4 className="font-medium mb-4 text-secondary-900 dark:text-white">Connect</h4>
               <div className="flex space-x-4">
                 <motion.a 
-                  href="https://github.com" 
+                href="https://github.com/saijamii"
                   target="_blank" 
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -62,7 +62,7 @@ export const Footer = () => {
                   <Github className="w-5 h-5" />
                 </motion.a>
                 <motion.a 
-                  href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/saijamii/"
                   target="_blank" 
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -71,18 +71,9 @@ export const Footer = () => {
                 >
                   <Linkedin className="w-5 h-5" />
                 </motion.a>
+             
                 <motion.a 
-                  href="https://twitter.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-                >
-                  <Twitter className="w-5 h-5" />
-                </motion.a>
-                <motion.a 
-                  href="mailto:email@example.com" 
+                  href="mailto:saijami38@gmail.com" 
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"

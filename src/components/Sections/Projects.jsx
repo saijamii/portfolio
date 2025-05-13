@@ -44,7 +44,7 @@ export const Projects = forwardRef((props, ref) => {
         </motion.h2>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mr-2 ml-2">
           {projects.map((project, index) => (
             <motion.div
               key={index}

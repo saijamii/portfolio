@@ -41,8 +41,8 @@ export const Contact = forwardRef((props, ref) => {
     {
       icon: <Mail className="w-6 h-6 text-primary-600 dark:text-primary-400" />,
       title: "Email",
-      content: "contact@example.com",
-      link: "mailto:contact@example.com",
+      content: "saijami38@gmail.com",
+      link: "mailto:saijami38@gmail.com",
     },
     // {
     //   icon: (
@@ -125,7 +125,7 @@ export const Contact = forwardRef((props, ref) => {
               </h4>
               <div className="flex space-x-4">
                 <motion.a
-                  href="https://github.com"
+                  href="https://github.com/saijamii"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center rounded-full bg-secondary-100 dark:bg-secondary-800 text-secondary-700 dark:text-secondary-300 hover:bg-primary-100 dark:hover:bg-primary-900 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -143,7 +143,7 @@ export const Contact = forwardRef((props, ref) => {
                   </svg>
                 </motion.a>
                 <motion.a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/saijamii"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center rounded-full bg-secondary-100 dark:bg-secondary-800 text-secondary-700 dark:text-secondary-300 hover:bg-primary-100 dark:hover:bg-primary-900 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -221,7 +221,6 @@ export const Contact = forwardRef((props, ref) => {
                         onChange={handleChange}
                         required
                         className="input-field"
-                        placeholder="John Doe"
                       />
                     </div>
 
@@ -240,7 +239,6 @@ export const Contact = forwardRef((props, ref) => {
                         onChange={handleChange}
                         required
                         className="input-field"
-                        placeholder="john@example.com"
                       />
                     </div>
 
