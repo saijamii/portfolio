@@ -32,8 +32,8 @@ export const Contact = forwardRef((props, ref) => {
       const userID = import.meta.env.VITE_PUBLIC_KEY;
 
       const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
+        name: formData.name,
+        email: formData.email,
         subject: formData.subject,
         message: formData.message,
       };

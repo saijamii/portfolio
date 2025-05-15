@@ -72,7 +72,7 @@ export const Projects = forwardRef((props, ref) => {
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap  mb-6">
+                <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}

@@ -38,12 +38,7 @@ export const Skills = forwardRef((props, ref) => {
         'Git',
         'Bitbucket',
         'GitHub',
-        'VS Code',
-        'Chrome DevTools',
-        'npm/yarn',
-        'ESLint',
-        'Prettier',
-        'Figma'
+        'Postman',
       ]
     },
   ];
@@ -56,7 +51,7 @@ export const Skills = forwardRef((props, ref) => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5 }}  
         >
           Technical Skills
         </motion.h2>
