@@ -7,33 +7,36 @@ export const Skills = forwardRef((props, ref) => {
       title: 'Frontend Development',
       skills: [
         'JavaScript (ES6+)',
-        'TypeScript',
         'React.js',
+        'Redux',
         'Next.js',
-        'Vue.js',
-        'Webpack',
         'Vite',
-        'Jest',
-        'React Testing Library'
+        'HTML5',
       ]
     },
     {
       title: 'Styling & Design',
       skills: [
         'CSS3',
-        'Sass/SCSS',
         'Tailwind CSS',
-        'Styled Components',
-        'CSS Modules',
-        'CSS-in-JS',
+        'Ant Design',
         'Responsive Design',
-        'UI/UX Principles'
+      ]
+    },
+    {
+      title: 'Backend Development',
+      skills: [
+        'Node.js',
+        'Mongodb',
+        'GraphQL',
+        'REST APIs',
       ]
     },
     {
       title: 'Tools & Version Control',
       skills: [
         'Git',
+        'Bitbucket',
         'GitHub',
         'VS Code',
         'Chrome DevTools',
@@ -43,25 +46,12 @@ export const Skills = forwardRef((props, ref) => {
         'Figma'
       ]
     },
-    {
-      title: 'Core Concepts',
-      skills: [
-        'Web Performance',
-        'Accessibility (a11y)',
-        'SEO Principles',
-        'REST APIs',
-        'GraphQL',
-        'CI/CD',
-        'Agile/Scrum',
-        'Cross-browser Compatibility'
-      ]
-    }
   ];
 
   return (
     <section ref={ref} id="skills" className="py-20 bg-secondary-50 dark:bg-secondary-800">
       <div className="section-container">
-        <motion.h2 
+        <motion.h2
           className="section-title"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,7 +60,7 @@ export const Skills = forwardRef((props, ref) => {
         >
           Technical Skills
         </motion.h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div

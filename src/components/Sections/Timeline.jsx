@@ -18,8 +18,6 @@ export const Timeline = forwardRef((props, ref) => {
       title: "Bachelor of Technology Mechanical Engineering ",
       organization: "Gayatri Vidya Parishad",
       date: "2019 - 2022",
-      description:
-        "Specialized in Human-Computer Interaction and Web Technologies. Completed thesis on performance optimization techniques for modern web applications.",
       skills: [],
     },
   ];
