@@ -1,6 +1,7 @@
 import React, { forwardRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import emailjs from 'emailjs-com';
 
 export const Contact = forwardRef((props, ref) => {
   const [formData, setFormData] = useState({
@@ -21,20 +22,34 @@ export const Contact = forwardRef((props, ref) => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setFormStatus({ isSubmitting: true, isSubmitted: false, error: null });
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const serviceID = import.meta.env.VITE_SERVICE_ID;
+      const templateID = import.meta.env.VITE_TEMPLATE_ID;
+      const userID = import.meta.env.VITE_PUBLIC_KEY;
+
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      };
+
+      await emailjs.send(serviceID, templateID, templateParams, userID);
+
       setFormStatus({ isSubmitting: false, isSubmitted: true, error: null });
       setFormData({ name: "", email: "", subject: "", message: "" });
 
-      // Reset success message after 5 seconds
       setTimeout(() => {
         setFormStatus({ isSubmitting: false, isSubmitted: false, error: null });
       }, 5000);
-    }, 1500);
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      setFormStatus({ isSubmitting: false, isSubmitted: false, error: "Failed to send email. Please try again." });
+    }
   };
 
   const contactInfo = [
