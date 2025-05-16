@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, } from 'lucide-react';
 
 export const Hero = () => {
   return (
@@ -32,7 +32,7 @@ export const Hero = () => {
               something amazing together.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4">
+            {/* <div className="flex flex-wrap justify-center gap-4">
               <motion.a
                 href="#contact"
                 className="px-8 py-3 bg-primary-800 text-white rounded-md transition-colors duration-300"
@@ -49,7 +49,7 @@ export const Hero = () => {
               >
                 View Projects
               </motion.a>
-            </div>
+            </div> */}
 
             <div className="flex justify-center items-center gap-6 mt-12">
               <motion.a
@@ -72,7 +72,7 @@ export const Hero = () => {
               >
                 <Linkedin className="w-6 h-6" />
               </motion.a>
-              <motion.a
+              {/* <motion.a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -81,7 +81,7 @@ export const Hero = () => {
                 whileTap={{ scale: 0.9 }}
               >
                 <Twitter className="w-6 h-6" />
-              </motion.a>
+              </motion.a> */}
             </div>
           </motion.div>
         </div>
