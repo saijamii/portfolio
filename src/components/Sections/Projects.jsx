@@ -76,7 +76,7 @@ export const Projects = forwardRef((props, ref) => {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-500 rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-primary-100 dark:bg-primary-500 text-primary-800 dark:text-primary-100 rounded-full text-sm font-medium"
                     >
                       {tech}
                     </span>
@@ -116,3 +116,4 @@ export const Projects = forwardRef((props, ref) => {
     </section>
   );
 });
+Projects.displayName = "Projects"

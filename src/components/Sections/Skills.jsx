@@ -51,7 +51,7 @@ export const Skills = forwardRef((props, ref) => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}  
+          transition={{ duration: 0.5 }}
         >
           Technical Skills
         </motion.h2>
@@ -73,7 +73,7 @@ export const Skills = forwardRef((props, ref) => {
                 {category.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-primary-100 dark:bg-primary-500 text-primary-700 dark:text-primary-100 rounded-full text-sm font-medium"
                   >
                     {skill}
                   </span>
@@ -86,3 +86,4 @@ export const Skills = forwardRef((props, ref) => {
     </section>
   );
 });
+Skills.displayName = "Skills";

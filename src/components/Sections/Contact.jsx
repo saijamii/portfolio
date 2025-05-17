@@ -299,7 +299,7 @@ export const Contact = forwardRef((props, ref) => {
                   <div className="mt-6">
                     <motion.button
                       type="submit"
-                      className="w-full py-3 px-6 bg-primary-600 hover:bg-primary-700 text-white rounded-md font-medium flex items-center justify-center"
+                      className="w-full py-3 px-6 btn-primary text-white rounded-md font-medium flex items-center justify-center"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       disabled={formStatus.isSubmitting}

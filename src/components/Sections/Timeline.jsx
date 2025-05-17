@@ -63,7 +63,7 @@ export const Timeline = forwardRef((props, ref) => {
                     <h3 className="text-xl font-bold text-secondary-900 dark:text-white">
                       {experience.title}
                     </h3>
-                    <span className="text-sm font-medium text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/30 px-3 py-1 rounded-full mt-2 sm:mt-0">
+                    <span className="text-sm font-medium text-primary-600 dark:text-primary-100 bg-primary-50 dark:bg-primary-500 px-3 py-1 rounded-full mt-2 sm:mt-0">
                       {experience.date}
                     </span>
                   </div>
@@ -72,7 +72,7 @@ export const Timeline = forwardRef((props, ref) => {
                     {experience.organization}
                   </h4>
 
-                  <p className="text-secondary-600 dark:text-secondary-400 mb-4">
+                  <p className="text-secondary-600 dark:text-secondary-100 mb-4">
                     {experience.description}
                   </p>
 
@@ -97,3 +97,4 @@ export const Timeline = forwardRef((props, ref) => {
     </section>
   );
 });
+Timeline.displayName="Timeline"

@@ -156,3 +156,4 @@ export const About = forwardRef((props, ref) => {
     </section>
   );
 });
+About.displayName="About"

@@ -26,7 +26,7 @@ export const Hero = () => {
             <h3 className="text-2xl md:text-3xl font-medium mb-8 text-secondary-700 dark:text-secondary-300">
               Frontend Developer
             </h3>
-            <p className="text-secondary-600 dark:text-secondary-400 text-lg mb-10 max-w-2xl">
+            <p className="text-secondary-600 dark:text-primary-800 text-lg mb-10 max-w-2xl">
               I design and build exceptional digital experiences that are fast,
               accessible, visually appealing, and responsive. Let's create
               something amazing together.
