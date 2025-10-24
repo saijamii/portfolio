@@ -26,8 +26,8 @@ export const Header = ({ onNavigate }) => {
   return (
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'bg-white/90 dark:bg-secondary-900/90 backdrop-blur-sm shadow-sm'
-          : 'bg-transparent'
+        ? 'bg-white/90 dark:bg-secondary-900/90 backdrop-blur-sm shadow-sm'
+        : 'bg-transparent'
         }`}
       initial="hidden"
       animate="visible"
@@ -70,12 +70,6 @@ export const Header = ({ onNavigate }) => {
               className="nav-link text-secondary-700 dark:text-secondary-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
             >
               Projects
-            </button>
-            <button
-              onClick={onNavigate.contact}
-              className="btn-primary"
-            >
-              Contact
             </button>
 
             {/* Theme Toggle */}
@@ -166,15 +160,6 @@ export const Header = ({ onNavigate }) => {
               className="block w-full text-left py-3 px-4 hover:bg-secondary-100 dark:hover:bg-secondary-800 rounded-md"
             >
               Projects
-            </button>
-            <button
-              onClick={() => {
-                onNavigate.contact();
-                setIsMobileMenuOpen(false);
-              }}
-              className="block w-full py-3 px-4 bg-primary-600 hover:bg-primary-700 text-white rounded-md"
-            >
-              Contact
             </button>
           </div>
         </motion.div>

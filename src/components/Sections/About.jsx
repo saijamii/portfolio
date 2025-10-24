@@ -15,21 +15,21 @@ export const About = forwardRef((props, ref) => {
       icon: <Code className="w-8 h-8 text-primary-600 dark:text-primary-400" />,
       title: "Frontend Development",
       description:
-        "Building modern, responsive web applications using React and related technologies.",
+        "Build modular, responsive, and maintainable React apps with modern patterns (Hooks, Context, Redux, Zustand, React Query).",
     },
     {
       icon: <Zap className="w-8 h-8 text-primary-600 dark:text-primary-400" />,
       title: "Performance Optimization",
       description:
-        "Optimizing web applications for speed, accessibility, and user experience.",
+        "Audit and optimize bundle size, API calls, and runtime performance using Lighthouse, and Webpack tools.",
     },
     {
       icon: (
         <Globe className="w-8 h-8 text-primary-600 dark:text-primary-400" />
       ),
-      title: "Cross-platform Development",
+      title: "Cross-Platform Experience",
       description:
-        "Creating consistent experiences across different browsers and devices.",
+        "Ensure consistent behavior and rendering across browsers and devices — accessible, reliable, and pixel-perfect.",
     },
     {
       icon: (
@@ -37,7 +37,7 @@ export const About = forwardRef((props, ref) => {
       ),
       title: "UI Implementation",
       description:
-        "Translating design mockups into pixel-perfect, responsive interfaces.",
+        "Transform Figma or design systems into dynamic, production-ready interfaces that align perfectly with brand and accessibility standards.",
     },
   ];
 
@@ -66,31 +66,12 @@ export const About = forwardRef((props, ref) => {
             transition={{ duration: 0.5 }}
           >
             <h3 className="text-2xl font-bold mb-6 text-secondary-900 dark:text-white">
-              A passionate Frontend Developer based in India
+              A Frontend Developer who blends UI elegance with performance engineering.
             </h3>
 
             <p className="text-secondary-700 dark:text-secondary-300 mb-6">
-              I specialize in building exceptional digital experiences using
-              modern frontend technologies. With ~3 years of experience in React
-              and its ecosystem, I focus on creating performant, accessible, and
-              user-friendly web applications.
+              I’m a passionate React developer from India with 3+ years of experience creating B2B/B2C web applications that serve real-world business needs. I love transforming complex ideas into smooth, scalable interfaces — always with performance and accessibility in mind.
             </p>
-
-            <p className="text-secondary-700 dark:text-secondary-300 mb-10">
-              My approach combines technical expertise with a keen eye for
-              design implementation. I'm passionate about web standards, modern
-              JavaScript, and creating smooth, interactive user experiences that
-              work across all devices.
-            </p>
-
-            <motion.a
-              href="#contact"
-              className="btn-primary inline-block"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Contact Me
-            </motion.a>
           </motion.div>
 
           {/* <motion.div
@@ -156,4 +137,4 @@ export const About = forwardRef((props, ref) => {
     </section>
   );
 });
-About.displayName="About"
+About.displayName = "About"

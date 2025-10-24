@@ -17,21 +17,20 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-xl md:text-2xl font-medium text-primary-800 dark:text-primary-500 mb-4">
+            {/* <h2 className="text-xl md:text-2xl font-medium text-primary-800 dark:text-primary-500 mb-4">
               Hello, I'm
-            </h2>
+            </h2> */}
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-800 to-primary-600 dark:from-primary-500 dark:to-primary-700 text-transparent bg-clip-text animate-gradient bg-size-200">
               Sai Jami
             </h1>
             <h3 className="text-2xl md:text-3xl font-medium mb-8 text-secondary-700 dark:text-secondary-300">
-              Frontend Developer
+              Frontend Developer | Blending UI & Performance
             </h3>
             <p className="text-secondary-600 dark:text-primary-800 text-lg mb-10 max-w-2xl">
-              I design and build exceptional digital experiences that are fast,
-              accessible, visually appealing, and responsive. Let's create
-              something amazing together.
+              My goal? Build interfaces that feel fast and stay fast — without sacrificing design or maintainability.
+              <br />
             </p>
-
+            Let’s build something users (and metrics) will love. ⚡
             {/* <div className="flex flex-wrap justify-center gap-4">
               <motion.a
                 href="#contact"

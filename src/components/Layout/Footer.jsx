@@ -40,11 +40,6 @@ export const Footer = () => {
                     Projects
                   </a>
                 </li>
-                <li>
-                  <a href="#contact" className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                    Contact
-                  </a>
-                </li>
               </ul>
             </div>
 
