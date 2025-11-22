@@ -1,0 +1,78 @@
+[
+    { "name": "React", "href": "https://react.dev/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/react.svg" },
+    { "name": "JavaScript", "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/js.svg" },
+    { "name": "Redux", "href": "https://redux.js.org/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/redux.svg" },
+    { "name": "TypeScript", "href": "https://www.typescriptlang.org/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/typescript.svg" },
+    { "name": "Node.js", "href": "https://nodejs.org/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/nodejs.svg" },
+    {
+      "name": "Next.js",
+      "href": "https://nextjs.org/",
+      "iconLight": "https://assets.chanhdai.com/images/tech-stack-icons/nextjs2-light.svg",
+      "iconDark": "https://assets.chanhdai.com/images/tech-stack-icons/nextjs2-dark.svg"
+    },
+    { "name": "Tailwind CSS", "href": "https://tailwindcss.com/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/tailwindcss.svg" },
+    {
+      "name": "shadcn/ui",
+      "href": "https://ui.shadcn.com/",
+      "iconLight": "https://assets.chanhdai.com/images/tech-stack-icons/shadcn-ui-light.svg",
+      "iconDark": "https://assets.chanhdai.com/images/tech-stack-icons/shadcn-ui-dark.svg"
+    },
+    {
+      "name": "TanStack",
+      "href": "https://tanstack.com/",
+      "iconLight": "https://assets.chanhdai.com/images/tech-stack-icons/tanstack-light.svg",
+      "iconDark": "https://assets.chanhdai.com/images/tech-stack-icons/tanstack-dark.svg"
+    },
+    { "name": "Ant Design", "href": "https://ant.design/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/antd.svg" },
+    {
+      "name": "React Router",
+      "href": "https://reactrouter.com/",
+      "iconLight": "https://assets.chanhdai.com/images/tech-stack-icons/react-router-light.svg",
+      "iconDark": "https://assets.chanhdai.com/images/tech-stack-icons/react-router-dark.svg"
+    },
+    { "name": "GraphQL", "href": "https://graphql.org/", "icon": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763818820/graphql-svgrepo-com_l58b0m.svg" },
+    { "name": "Vite", "href": "https://vite.dev/", "icon": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763818455/vite-svgrepo-com_hiobm2.svg" },
+    { "name": "Git", "href": "https://git-scm.com/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/git.svg" },
+    { "name": "MySQL", "href": "https://www.mysql.com/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/mysql.svg" },
+    { "name": "MongoDB", "href": "https://www.mongodb.com/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/mongodb.svg" },
+    { "name": "Postman", "href": "https://www.postman.com/", "iconLight": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763818953/postman-svgrepo-com_endhml.svg", "iconDark": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763818954/postman-icon-svgrepo-com_izaxdp.svg" },
+    { "name": "PostgreSQL", "href": "https://www.postgresql.org/", "icon": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763818175/postgresql-logo-svgrepo-com_nwrkza.svg" },
+    {
+      "name": "GitLab",
+      "href": "https://chatgpt.com/",
+      "iconLight": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763821335/gitlab-svgrepo-com_1_sbxlvy.svg",
+      "iconDark": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763821335/gitlab-svgrepo-com_csfoku.svg"
+    },
+    {
+      "name": "ChatGPT",
+      "href": "https://chatgpt.com/",
+      "iconLight": "https://assets.chanhdai.com/images/tech-stack-icons/chatgpt-light.svg",
+      "iconDark": "https://assets.chanhdai.com/images/tech-stack-icons/chatgpt-dark.svg"
+    },
+    {
+      "name": "HTML",
+      "href": "https://html.com/",
+      "icon": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763821657/html-5-svgrepo-com_olmvgi.svg"
+    },
+    {
+      "name": "CSS",
+      "href": "https://css.com/",
+      "icon": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763821657/css-3-svgrepo-com_elslbz.svg"
+    },
+    {
+      "name": "Bitbucket",
+      "href": "https://bitbucket.com/",
+      "icon": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763821499/bitbucket-svgrepo-com_yw6epj.svg"
+    },
+    {
+      "name": "ClickUp",
+      "href": "https://clickup.com/",
+      "icon": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763821500/clickup-svgrepo-com_dkexfo.svg"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/",
+      "iconLight": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763819263/github-142-svgrepo-com_kcumvk.svg",
+      "iconDark": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763819693/github-svgrepo-com_pow34z.svg"
+    }
+]

@@ -1,89 +1,86 @@
 import React, { forwardRef } from 'react';
 import { motion } from 'framer-motion';
+import skills from '../../data/skills.json';
 
 export const Skills = forwardRef((props, ref) => {
-  const skillCategories = [
-    {
-      title: 'Frontend Development',
-      skills: [
-        'JavaScript (ES6+)',
-        'React.js',
-        'Redux',
-        'Next.js',
-        'Vite',
-        'HTML5',
-      ]
-    },
-    {
-      title: 'Styling & Design',
-      skills: [
-        'CSS3',
-        'Tailwind CSS',
-        'Ant Design',
-        'Responsive Design',
-      ]
-    },
-    {
-      title: 'Backend Development',
-      skills: [
-        'Node.js',
-        'Mongodb',
-        'GraphQL',
-        'REST APIs',
-      ]
-    },
-    {
-      title: 'Tools & Version Control',
-      skills: [
-        'Git',
-        'Bitbucket',
-        'GitHub',
-        'Postman',
-      ]
-    },
-  ];
-
   return (
-    <section ref={ref} id="skills" className="py-20 bg-secondary-50 dark:bg-secondary-800">
+    <section ref={ref} id="skills" className="py-36 bg-secondary-50 dark:bg-secondary-900">
       <div className="section-container">
         <motion.h2
-          className="section-title"
+          className="section-title mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
         >
-          Technical Skills
+          Stack
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {skillCategories.map((category, categoryIndex) => (
-            <motion.div
-              key={categoryIndex}
-              className="card p-6"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
-            >
-              <h3 className="text-xl font-bold mb-4 text-secondary-900 dark:text-white">
-                {category.title}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill, skillIndex) => (
-                  <span
-                    key={skillIndex}
-                    className="px-3 py-1 bg-primary-100 dark:bg-primary-500 text-primary-700 dark:text-primary-100 rounded-full text-sm font-medium"
-                  >
-                    {skill}
+        <div
+          className="p-4 rounded-xl border border-secondary-200 dark:border-secondary-700"
+        >
+          <ul className="flex flex-wrap gap-4 select-none justify-center">
+            {skills.map((tech, index) => (
+              <motion.li
+                key={index}
+                className="flex"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: index * 0.03 }}
+              >
+                <a
+                  href={tech.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={tech.name}
+                  className="relative group p-2 rounded-lg hover:bg-secondary-200 dark:hover:bg-secondary-800 transition-colors"
+                >
+                  {tech.icon ? (
+                    <img
+                      alt={`${tech.name} icon`}
+                      loading="lazy"
+                      width="32"
+                      height="32"
+                      decoding="async"
+                      src={tech.icon}
+                      className="w-8 h-8"
+                    />
+                  ) : (
+                    <>
+                      <img
+                        alt={`${tech.name} light icon`}
+                        loading="lazy"
+                        width="32"
+                        height="32"
+                        decoding="async"
+                        src={tech.iconLight}
+                        className="w-8 h-8 block dark:hidden"
+                      />
+                      <img
+                        alt={`${tech.name} dark icon`}
+                        loading="lazy"
+                        width="32"
+                        height="32"
+                        decoding="async"
+                        src={tech.iconDark}
+                        className="w-8 h-8 hidden dark:block"
+                      />
+                    </>
+                  )}
+                  <span className="sr-only">{tech.name}</span>
+
+                  <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-xs font-medium bg-secondary-900 text-white px-2 py-1 rounded pointer-events-none whitespace-nowrap z-20">
+                    {tech.name}
                   </span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+                </a>
+              </motion.li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
   );
 });
+
 Skills.displayName = "Skills";
