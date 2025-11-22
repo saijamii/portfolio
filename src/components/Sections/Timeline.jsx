@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import { motion } from "framer-motion";
 import { Briefcase, GraduationCap } from "lucide-react";
+import StatusPing from "./StatusPing";
 
 export const Timeline = forwardRef((props, ref) => {
   const experiences = [
@@ -68,9 +69,13 @@ export const Timeline = forwardRef((props, ref) => {
                     </span>
                   </div>
 
-                  <h4 className="text-lg font-medium mb-4 text-secondary-700 dark:text-secondary-300">
-                    {experience.organization}
-                  </h4>
+                  <div className="flex items-center gap-2 mb-4">
+                    <h4 className="text-lg font-medium text-secondary-700 dark:text-secondary-300">
+                      {experience.organization}
+                    </h4>
+
+                    {experience.type === "work" && <StatusPing />}
+                  </div>
 
                   <p className="text-secondary-600 dark:text-secondary-100 mb-4">
                     {experience.description}
@@ -97,4 +102,4 @@ export const Timeline = forwardRef((props, ref) => {
     </section>
   );
 });
-Timeline.displayName="Timeline"
+Timeline.displayName = "Timeline"
