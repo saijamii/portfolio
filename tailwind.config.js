@@ -22,7 +22,7 @@ export default {
           100: "#E4EBE6", // Gray 2
           200: "#B6BFB8", // Gray 3
           300: "#909692", // Gray 4
-          400: "#909692", // Gray 5
+          400: "#09090b", // Dark background
           500: "#0d1117", // Gray 6
           600: "#08872B", // Green 6
           700: "#232925", // Gray 5
@@ -34,6 +34,7 @@ export default {
           500: "#08872B", // Mint
           700: "#5FED83", // Green 3
         },
+        border: "hsl(var(--border))",
       },
       fontFamily: {
         sans: [

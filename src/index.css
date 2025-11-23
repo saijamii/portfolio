@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-edge: #B6BFB8;
+    --border: 0 0% 73%; /* Light mode border */
+  }
+
+  .dark {
+    --color-edge: #232925;
+    --border: 0 0% 14%; /* Dark mode border */
+  }
+
   body {
     @apply antialiased;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans',
