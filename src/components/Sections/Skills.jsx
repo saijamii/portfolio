@@ -6,22 +6,23 @@ import { useTheme } from '../../context/ThemeContext';
 export const Skills = forwardRef((props, ref) => {
   const { theme } = useTheme();
   return (
-    <section ref={ref} id="skills" className="py-14 bg-secondary-50 dark:bg-secondary-900">
-      <div className="section-container">
-        <motion.h2
-          className="section-title mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-        >
+    <section
+      ref={ref}
+      data-slot="panel"
+      className="screen-line-before screen-line-after border-x border-edge dark:border-white/10"
+      id="skills"
+    >
+      <header data-slot="panel-header" className="screen-line-after px-4 py-4 border-b border-edge dark:border-white/10">
+        <h2 data-slot="panel-title" className="text-3xl font-semibold dark:text-white text-gray-900">
           Stack
-        </motion.h2>
+        </h2>
+      </header>
 
+      <div className="px-4 py-8">
         <div
           className="p-4 rounded-xl border border-secondary-200 dark:border-secondary-700 bg-[#fdfdfd] dark:bg-[#161618]"
         >
-          <ul className="flex flex-wrap gap-4 select-none justify-center">
+          <ul className="flex flex-wrap gap-1 select-none justify-center">
             {skills.map((tech, index) => (
               <motion.li
                 key={index}
@@ -73,7 +74,7 @@ export const Skills = forwardRef((props, ref) => {
                   <span className="sr-only">{tech.name}</span>
 
                   <span
-                    className={`absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-xs font-medium bg-secondary-900 ${theme === 'dark' ? 'text-white-300' : 'text-black-500'
+                    className={`absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-xs font-medium ${theme === 'dark' ? 'text-white-300 bg-gray-900' : 'text-black bg-gray-200'
                       } px-2 py-1 rounded pointer-events-none whitespace-nowrap z-20 `}
                   >
                     {tech.name}
