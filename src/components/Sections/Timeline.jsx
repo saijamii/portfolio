@@ -27,7 +27,7 @@ export const Timeline = forwardRef((props, ref) => {
     <section
       ref={ref}
       id="timeline"
-      className="py-20 bg-secondary-50 dark:bg-secondary-800"
+      className="py-20 bg-secondary-50 dark:bg-secondary-900"
     >
       <div className="section-container">
         <motion.h2
@@ -86,7 +86,7 @@ export const Timeline = forwardRef((props, ref) => {
                       {experience.skills.map((skill, skillIndex) => (
                         <span
                           key={skillIndex}
-                          className="text-xs font-medium text-secondary-700 dark:text-secondary-300 bg-secondary-100 dark:bg-secondary-800 px-2 py-1 rounded"
+                          className="text-xs font-medium text-secondary-700 dark:text-secondary-300 bg-secondary-100 dark:bg-secondary-900 px-2 py-1 rounded"
                         >
                           {skill}
                         </span>

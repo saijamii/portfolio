@@ -31,7 +31,7 @@ export const Projects = forwardRef((props, ref) => {
   ];
 
   return (
-    <section ref={ref} id="projects" className="py-20 bg-secondary-50 dark:bg-secondary-800">
+    <section ref={ref} id="projects" className="py-20 bg-secondary-50 dark:bg-secondary-900">
       <div className="section-container">
         <motion.h2
           className="section-title"
@@ -76,7 +76,7 @@ export const Projects = forwardRef((props, ref) => {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-primary-100 dark:bg-primary-500 text-primary-800 dark:text-primary-100 rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-100 rounded-full text-sm font-medium"
                     >
                       {tech}
                     </span>
@@ -88,7 +88,7 @@ export const Projects = forwardRef((props, ref) => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center text-secondary-700 dark:text-secondary-300 hover:text-primary-800 dark:hover:text-primary-500 transition-colors"
+                    className="flex items-center text-secondary-700 dark:text-secondary-300 hover:text-primary-800 dark:hover:text-primary-900 transition-colors"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -100,7 +100,7 @@ export const Projects = forwardRef((props, ref) => {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center text-secondary-700 dark:text-secondary-300 hover:text-primary-800 dark:hover:text-primary-500 transition-colors"
+                    className="flex items-center text-secondary-700 dark:text-secondary-300 hover:text-primary-800 dark:hover:text-primary-900 transition-colors"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >

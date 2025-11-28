@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div className={`${theme} min-h-screen`}>
-      <div className="bg-white dark:bg-secondary-400 text-secondary-400 dark:text-white min-h-screen transition-colors duration-300 flex flex-col">
+      <div className="bg-white dark:bg-secondary-900 text-secondary-400 dark:text-white min-h-screen transition-colors duration-300 flex flex-col">
         <Header
           onNavigate={{
             about: () => scrollToSection('about', aboutRef),

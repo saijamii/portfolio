@@ -45,7 +45,7 @@ export const About = forwardRef((props, ref) => {
     <section
       ref={ref}
       id="about"
-      className="py-20 bg-secondary-50 dark:bg-secondary-800"
+      className="py-20 bg-secondary-50 dark:bg-secondary-900"
     >
       <div className="section-container">
         <motion.h2

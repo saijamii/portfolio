@@ -36,7 +36,7 @@ export const Skills = forwardRef((props, ref) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={tech.name}
-                  className="relative group p-2 rounded-lg hover:bg-secondary-200 dark:hover:bg-secondary-800 transition-colors"
+                  className="relative group p-2 rounded-lg hover:bg-secondary-200 dark:hover:bg-secondary-900 transition-colors"
                 >
                   {tech.icon ? (
                     <img
