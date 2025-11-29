@@ -14,6 +14,7 @@ export const Home = forwardRef(({ sectionRefs }, ref) => {
         <>
             <Hero />
             <div className="mx-auto md:max-w-4xl px-2">
+                <Separator />
                 <About ref={aboutRef} />
                 <Separator />
                 <Skills ref={skillsRef} />
@@ -23,6 +24,7 @@ export const Home = forwardRef(({ sectionRefs }, ref) => {
                 <Projects ref={projectsRef} />
                 <Separator />
                 <Blog />
+                <Separator />
             </div>
         </>
     );
