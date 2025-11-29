@@ -6,12 +6,21 @@ export function Separator({ className }) {
         <div
             className={cn(
                 "relative flex h-8 w-full border-x border-edge pattern-edge",
-                "before:content-[''] before:absolute before:-left-[100vw] before:top-0",
+
+                // pseudo element core
+                "before:content-[''] before:absolute before:top-0 before:-left-[100vw]",
                 "before:z-[10] before:h-8 before:w-[200vw]",
+
+                // background pattern
+                "before:bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_1px,transparent_50%)]",
+
+                // your converted properties
                 "before:[background-size:10px_10px]",
-                "before:bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_0,transparent_50%)]",
+                "before:border before:border-solid before:border-secondary-200 dark:before:border-secondary-700",
+
                 className
             )}
+
         />
     );
 }
