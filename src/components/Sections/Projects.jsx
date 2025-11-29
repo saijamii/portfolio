@@ -67,7 +67,7 @@ export const Projects = forwardRef((props, ref) => {
           className="text-3xl font-semibold dark:text-white text-gray-900"
         >
           Projects
-          <sup className="ml-1 font-mono text-sm text-secondary-600 dark:text-secondary-400 select-none">
+          <sup className="ml-1 font-mono text-sm text-secondary-600 dark:text-primary-800 select-none">
             ({projects.length})
           </sup>
         </h2>

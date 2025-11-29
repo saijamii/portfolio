@@ -35,6 +35,7 @@ export default {
           700: "#5FED83", // Green 3
         },
         border: "hsl(var(--border))",
+        edge: "hsl(var(--border))",
       },
       fontFamily: {
         sans: [

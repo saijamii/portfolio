@@ -13,7 +13,7 @@ export const Home = forwardRef(({ sectionRefs }, ref) => {
     return (
         <>
             <Hero />
-            <div className="mx-auto md:max-w-3xl px-2">
+            <div className="mx-auto md:max-w-4xl px-2">
                 <About ref={aboutRef} />
                 <Separator />
                 <Skills ref={skillsRef} />

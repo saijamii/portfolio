@@ -41,7 +41,7 @@ const ProjectItem = memo(({ project }) => {
                                 {project.title}
                             </h3>
 
-                            <dl className="text-sm text-secondary-600 dark:text-secondary-400">
+                            <dl className="text-sm text-secondary-600 dark:text-primary-800">
                                 <dt className="sr-only">Period</dt>
                                 <dd className="flex items-center gap-0.5">
                                     <span>{project.period?.start || 'N/A'}</span>
@@ -53,7 +53,7 @@ const ProjectItem = memo(({ project }) => {
 
                         {project.liveUrl && (
                             <a
-                                className="relative flex size-6 shrink-0 items-center justify-center text-secondary-600 dark:text-secondary-400 after:absolute after:-inset-2 hover:text-secondary-900 dark:hover:text-white transition-colors"
+                                className="relative flex size-6 shrink-0 items-center justify-center text-secondary-600 dark:text-primary-800 after:absolute after:-inset-2 hover:text-secondary-900 dark:hover:text-white transition-colors"
                                 href={project.liveUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -65,7 +65,7 @@ const ProjectItem = memo(({ project }) => {
                         )}
 
                         <div
-                            className="shrink-0 text-secondary-600 dark:text-secondary-400"
+                            className="shrink-0 text-secondary-600 dark:text-primary-800"
                             aria-hidden="true"
                         >
                             {isOpen ? (

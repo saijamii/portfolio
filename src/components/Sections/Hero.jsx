@@ -12,7 +12,7 @@ export const Hero = () => {
       <div className="section-container relative z-10">
         <div className="flex flex-col items-center text-center">
           <motion.div
-            className="max-w-3xl"
+            className="max-w-4xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -93,7 +93,7 @@ export const Hero = () => {
         >
           <a
             href="#about"
-            className="text-secondary-600 dark:text-secondary-400 flex flex-col items-center"
+            className="text-secondary-600 dark:text-primary-800 flex flex-col items-center"
           >
             <span className="mb-2 text-sm">Scroll Down</span>
             <ChevronDown className="w-6 h-6" />

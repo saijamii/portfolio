@@ -101,7 +101,7 @@ export const Contact = forwardRef((props, ref) => {
               Contact Information
             </h3>
 
-            <p className="text-secondary-600 dark:text-secondary-400 mb-8">
+            <p className="text-secondary-600 dark:text-primary-800 mb-8">
               Have a project in mind or just want to say hello? I'd love to hear
               from you. Fill out the form or contact me directly using the
               information below.
@@ -120,7 +120,7 @@ export const Contact = forwardRef((props, ref) => {
                     <h4 className="font-medium text-secondary-900 dark:text-white mb-1">
                       {info.title}
                     </h4>
-                    <p className="text-secondary-600 dark:text-secondary-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                    <p className="text-secondary-600 dark:text-primary-800 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                       {info.content}
                     </p>
                   </div>

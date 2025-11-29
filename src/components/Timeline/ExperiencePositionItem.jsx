@@ -35,7 +35,7 @@ const ExperiencePositionItem = memo(({ position, isLast }) => {
                         {position.title}
                     </h4>
 
-                    <div className="shrink-0 text-secondary-600 dark:text-secondary-400" aria-hidden="true">
+                    <div className="shrink-0 text-secondary-600 dark:text-primary-800" aria-hidden="true">
                         {isOpen ? (
                             <ChevronUp className="size-4" />
                         ) : (
@@ -44,7 +44,7 @@ const ExperiencePositionItem = memo(({ position, isLast }) => {
                     </div>
                 </div>
 
-                <div className="relative z-1 flex items-center gap-2 pl-9 text-sm text-secondary-600 dark:text-secondary-400">
+                <div className="relative z-1 flex items-center gap-2 pl-9 text-sm text-secondary-600 dark:text-primary-800">
                     {position.employmentType && (
                         <>
                             <dl>

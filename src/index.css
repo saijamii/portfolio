@@ -87,3 +87,13 @@
     @apply w-full px-4 py-2 rounded-md border border-secondary-300 dark:border-secondary-700 bg-white dark:bg-secondary-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300;
   }
 }
+
+@layer utilities {
+  .screen-line-before {
+    @apply relative before:absolute before:top-0 before:-left-[100vw] before:z-[-1] before:h-px before:w-[200vw] before:bg-edge;
+  }
+
+  .screen-line-after {
+    @apply relative after:absolute after:bottom-0 after:-left-[100vw] after:z-[-1] after:h-px after:w-[200vw] after:bg-edge;
+  }
+}
