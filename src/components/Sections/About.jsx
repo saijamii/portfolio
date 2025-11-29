@@ -1,18 +1,14 @@
 import React, { forwardRef } from "react";
+import { Panel, PanelHeader, PanelTitle } from "../ui/Panel";
 
 export const About = forwardRef((props, ref) => {
   return (
-    <section
-      ref={ref}
-      data-slot="panel"
-      className="screen-line-before screen-line-after border-x border-edge dark:border-white/10"
-      id="about"
-    >
-      <header data-slot="panel-header" className="screen-line-after px-4 py-4 border-b border-edge dark:border-white/10">
-        <h2 data-slot="panel-title" className="text-3xl font-semibold dark:text-white text-gray-900">
+    <Panel ref={ref} id="about">
+      <PanelHeader>
+        <PanelTitle className="dark:text-white text-gray-900">
           About
-        </h2>
-      </header>
+        </PanelTitle>
+      </PanelHeader>
 
       <div data-slot="panel-body" className="p-4">
         <div
@@ -41,7 +37,7 @@ export const About = forwardRef((props, ref) => {
           </ul>
         </div>
       </div>
-    </section>
+    </Panel>
   );
 });
 

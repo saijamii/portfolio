@@ -1,5 +1,6 @@
 import React, { forwardRef, useMemo } from "react";
 import ProjectItem from "../Projects/ProjectItem";
+import { Panel, PanelHeader, PanelTitle } from "../ui/Panel";
 
 const projectsData = [
   {
@@ -53,32 +54,22 @@ export const Projects = forwardRef((props, ref) => {
   const projects = useMemo(() => projectsData, []);
 
   return (
-    <section
-      ref={ref}
-      data-slot="panel"
-      className="screen-line-before screen-line-after border-x border-edge dark:border-white/10"
-      id="projects"
-      aria-labelledby="projects-heading"
-    >
-      <header data-slot="panel-header" className="screen-line-after px-4 py-4 border-b border-edge dark:border-white/10">
-        <h2
+    <Panel ref={ref} id="projects" aria-labelledby="projects-heading">
+      <PanelHeader>
+        <PanelTitle
           id="projects-heading"
-          data-slot="panel-title"
-          className="text-3xl font-semibold dark:text-white text-gray-900"
+          className="dark:text-white text-gray-900"
         >
           Projects
-          <sup className="ml-1 font-mono text-sm text-secondary-600 dark:text-primary-800 select-none">
-            ({projects.length})
-          </sup>
-        </h2>
-      </header>
+        </PanelTitle>
+      </PanelHeader>
 
       <div className="py-2">
         {projects.map((project) => (
           <ProjectItem key={project.id} project={project} />
         ))}
       </div>
-    </section>
+    </Panel>
   );
 });
 

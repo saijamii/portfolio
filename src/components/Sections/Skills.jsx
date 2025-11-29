@@ -2,21 +2,17 @@ import React, { forwardRef } from 'react';
 import { motion } from 'framer-motion';
 import skills from '../../data/skills.json';
 import { useTheme } from '../../context/ThemeContext';
+import { Panel, PanelHeader, PanelTitle } from '../ui/Panel';
 
 export const Skills = forwardRef((props, ref) => {
   const { theme } = useTheme();
   return (
-    <section
-      ref={ref}
-      data-slot="panel"
-      className="screen-line-before screen-line-after border-x border-edge dark:border-white/10"
-      id="skills"
-    >
-      <header data-slot="panel-header" className="screen-line-after px-4 py-4 border-b border-edge dark:border-white/10">
-        <h2 data-slot="panel-title" className="text-3xl font-semibold dark:text-white text-gray-900">
+    <Panel ref={ref} id="skills">
+      <PanelHeader>
+        <PanelTitle className="dark:text-white text-gray-900">
           Stack
-        </h2>
-      </header>
+        </PanelTitle>
+      </PanelHeader>
 
       <div className="px-4 py-8">
         <div
@@ -85,7 +81,7 @@ export const Skills = forwardRef((props, ref) => {
           </ul>
         </div>
       </div>
-    </section>
+    </Panel>
   );
 });
 
