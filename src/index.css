@@ -13,10 +13,10 @@
 
   .dark {
     --color-edge: #232925;
-    --border: 0 0% 14%;
+    --border: 0 0% 50%;
     /* Dark mode border */
-    --pattern-foreground: rgba(255, 255, 255, 0.174);
-    --edge: rgb(255, 255, 255);
+    --pattern-foreground: rgba(255, 255, 255, 0.344);
+    --edge: rgba(255, 255, 255, 0.79);
   }
 
   body {

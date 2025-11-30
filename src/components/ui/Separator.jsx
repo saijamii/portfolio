@@ -16,7 +16,7 @@ export function Separator({ className }) {
 
                 // your converted properties
                 "before:[background-size:10px_10px]",
-                "before:border before:border-solid before:border-secondary-200 dark:before:border-secondary-700",
+                "before:border before:border-solid before:border-secondary-200 dark:before:border-edge",
 
                 className
             )}

@@ -2,7 +2,6 @@ import React, { useRef, Suspense, lazy, useEffect } from 'react';
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Header } from './components/Layout/Header';
-import { Footer } from './components/Layout/Footer';
 import { Home } from './pages/Home';
 import { useTheme } from './context/ThemeContext';
 
@@ -89,8 +88,6 @@ function App() {
             </Routes>
           </AnimatePresence>
         </main>
-
-        <Footer />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ function Panel({ className, ...props }) {
         <section
             data-slot="panel"
             className={cn(
-                "screen-line-before screen-line-after border-x border-edge dark:border-white/10",
+                "screen-line-before screen-line-after border-x border-edge",
                 className
             )}
             {...props}

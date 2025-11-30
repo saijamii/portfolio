@@ -6,14 +6,15 @@ import { Timeline } from '../components/Sections/Timeline';
 import { Projects } from '../components/Sections/Projects';
 import { Blog } from '../components/Sections/Blog';
 import { Separator } from '../components/ui/Separator';
+import { Footer } from '../components/Layout/Footer';
 
 export const Home = forwardRef(({ sectionRefs }, ref) => {
     const { aboutRef, skillsRef, timelineRef, projectsRef } = sectionRefs;
 
     return (
         <>
-            <Hero />
-            <div className="mx-auto md:max-w-4xl px-2">
+            <div className="mx-auto md:max-w-4xl">
+                <Hero />
                 <Separator />
                 <About ref={aboutRef} />
                 <Separator />
@@ -25,6 +26,7 @@ export const Home = forwardRef(({ sectionRefs }, ref) => {
                 <Separator />
                 <Blog />
                 <Separator />
+                <Footer />
             </div>
         </>
     );

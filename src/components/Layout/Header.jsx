@@ -24,15 +24,12 @@ export const Header = ({ onNavigate }) => {
 
   return (
     <motion.header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-        ? 'bg-white/90 dark:bg-secondary-900/90 backdrop-blur-sm shadow-sm'
-        : 'bg-transparent'
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 dark:bg-secondary-900/90 backdrop-blur-sm shadow-sm`}
       initial="hidden"
       animate="visible"
       variants={variants}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 screen-line-before screen-line-after border-x border-edge">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <motion.div

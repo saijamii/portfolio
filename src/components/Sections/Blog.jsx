@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { PostCard } from '../Blog/PostCard';
-import { posts } from '../../data/posts';
+import { useDevToPosts } from '../../hooks/useDevToPosts';
 import { Panel, PanelHeader, PanelTitle } from '../ui/Panel';
 
 export const Blog = () => {
-    const recentPosts = posts.slice(0, 4);
+    const { posts, loading, error } = useDevToPosts();
 
     return (
         <Panel id="blog">
@@ -19,9 +19,19 @@ export const Blog = () => {
                     <div className="border-l border-edge dark:border-white/10"></div>
                 </div>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    {recentPosts.map((post) => (
-                        <PostCard key={post.id} post={post} />
-                    ))}
+                    {loading ? (
+                        <div className="col-span-1 sm:col-span-2 text-center py-8 text-muted-foreground">
+                            Loading posts...
+                        </div>
+                    ) : error && posts.length === 0 ? (
+                        <div className="col-span-1 sm:col-span-2 text-center py-8 text-red-500">
+                            Failed to load posts.
+                        </div>
+                    ) : (
+                        posts.map((post) => (
+                            <PostCard key={post.id} post={post} />
+                        ))
+                    )}
                 </div>
             </div>
 
