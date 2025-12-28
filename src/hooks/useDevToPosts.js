@@ -24,7 +24,7 @@ export const useDevToPosts = () => {
                 }
 
                 // Fetch from API if cache is invalid or missing
-                const response = await fetch('https://dev.to/api/articles?username=saijamii&per_page=5');
+                const response = await fetch('https://dev.to/api/articles?username=saijamii&per_page=4');
                 if (!response.ok) {
                     throw new Error('Failed to fetch posts');
                 }

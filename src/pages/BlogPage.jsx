@@ -12,12 +12,26 @@ const BlogPage = () => {
                 </p>
             </header>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {posts.map((post) => (
-                    <div key={post.id} className="border border-edge dark:border-white/10 rounded-xl overflow-hidden bg-card dark:bg-secondary-400/50">
-                        <PostCard post={post} />
-                    </div>
-                ))}
+            <div className="relative pt-4">
+                <div className="absolute inset-0 -z-1 grid grid-cols-1 gap-4 max-sm:hidden sm:grid-cols-2">
+                    <div className="border-r border-edge" />
+                    <div className="border-l border-edge" />
+                </div>
+
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    {posts.map((post, index) => (
+                        <PostCard
+                            key={post.id}
+                            post={post}
+                        />
+                    ))}
+
+                    {posts.length === 0 && (
+                        <div className="screen-line-before screen-line-after p-4">
+                            <p className="font-mono text-sm">No posts found.</p>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     );

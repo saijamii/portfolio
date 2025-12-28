@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import PropTypes from 'prop-types';
 import { Hero } from '../components/Sections/Hero';
 import { About } from '../components/Sections/About';
 import { Skills } from '../components/Sections/Skills';
@@ -33,3 +34,12 @@ export const Home = forwardRef(({ sectionRefs }, ref) => {
 });
 
 Home.displayName = 'Home';
+
+Home.propTypes = {
+    sectionRefs: PropTypes.shape({
+        aboutRef: PropTypes.object,
+        skillsRef: PropTypes.object,
+        timelineRef: PropTypes.object,
+        projectsRef: PropTypes.object,
+    }),
+};
