@@ -69,7 +69,15 @@ const ExperiencePositionItem = memo(({ position, isLast }) => {
             >
                 {position.description && (
                     <div className="pt-2 pl-9 text-sm text-secondary-700 dark:text-secondary-300 font-mono">
-                        <p>{position.description}</p>
+                        {Array.isArray(position.description) ? (
+                            <ul className="list-disc list-inside space-y-1">
+                                {position.description.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
+                        ) : (
+                            <p>{position.description}</p>
+                        )}
                     </div>
                 )}
 
