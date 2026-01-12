@@ -5,10 +5,9 @@ import { cn } from "../../lib/utils";
 
 const Slot = SlotPrimitive;
 
-const Panel = React.forwardRef(({ className, ...props }, ref) => {
+const Panel = React.forwardRef(({ className, ...props }) => {
     return (
         <section
-            ref={ref}
             data-slot="panel"
             className={cn(
                 "screen-line-before screen-line-after border-x border-edge",

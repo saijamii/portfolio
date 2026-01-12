@@ -74,7 +74,7 @@ export const Timeline = forwardRef((props, ref) => {
           id="timeline-heading"
           className="dark:text-white text-gray-900"
         >
-          My Journey
+          Timeline
         </PanelTitle>
       </PanelHeader>
 

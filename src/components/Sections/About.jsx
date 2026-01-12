@@ -1,9 +1,9 @@
 import React, { forwardRef } from "react";
 import { Panel, PanelHeader, PanelTitle } from "../ui/Panel";
 
-export const About = forwardRef((props, ref) => {
+export const About = forwardRef((props) => {
   return (
-    <Panel ref={ref} id="about">
+    <Panel id="about">
       <PanelHeader>
         <PanelTitle className="dark:text-white text-gray-900">
           About

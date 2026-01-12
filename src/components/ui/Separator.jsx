@@ -1,9 +1,10 @@
 import React from "react";
 import { cn } from "../../lib/utils";
 
-export function Separator({ className }) {
+export const Separator = React.forwardRef(({ className }, ref) => {
     return (
         <div
+            ref={ref}
             className={cn(
                 "relative flex h-8 w-full border-x border-edge pattern-edge",
 
@@ -23,4 +24,6 @@ export function Separator({ className }) {
 
         />
     );
-}
+});
+
+Separator.displayName = "Separator";
