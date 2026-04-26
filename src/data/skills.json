@@ -33,7 +33,6 @@
     { "name": "GraphQL", "href": "https://graphql.org/", "icon": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763818820/graphql-svgrepo-com_l58b0m.svg" },
     { "name": "Vite", "href": "https://vite.dev/", "icon": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763818455/vite-svgrepo-com_hiobm2.svg" },
     { "name": "Git", "href": "https://git-scm.com/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/git.svg" },
-    { "name": "MySQL", "href": "https://www.mysql.com/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/mysql.svg" },
     { "name": "MongoDB", "href": "https://www.mongodb.com/", "icon": "https://assets.chanhdai.com/images/tech-stack-icons/mongodb.svg" },
     { "name": "Postman", "href": "https://www.postman.com/", "iconLight": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763818953/postman-svgrepo-com_endhml.svg", "iconDark": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763818954/postman-icon-svgrepo-com_izaxdp.svg" },
     { "name": "PostgreSQL", "href": "https://www.postgresql.org/", "icon": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763818175/postgresql-logo-svgrepo-com_nwrkza.svg" },
@@ -42,12 +41,6 @@
       "href": "https://chatgpt.com/",
       "iconLight": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763821335/gitlab-svgrepo-com_1_sbxlvy.svg",
       "iconDark": "https://res.cloudinary.com/dkf7zjdju/image/upload/v1763821335/gitlab-svgrepo-com_csfoku.svg"
-    },
-    {
-      "name": "ChatGPT",
-      "href": "https://chatgpt.com/",
-      "iconLight": "https://assets.chanhdai.com/images/tech-stack-icons/chatgpt-light.svg",
-      "iconDark": "https://assets.chanhdai.com/images/tech-stack-icons/chatgpt-dark.svg"
     },
     {
       "name": "HTML",

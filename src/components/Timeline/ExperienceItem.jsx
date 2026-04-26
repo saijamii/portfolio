@@ -29,7 +29,7 @@ const ExperienceItem = memo(({ experience }) => {
                 {experience.isCurrentEmployer && <StatusPing />}
             </div>
 
-            <div className="relative space-y-4 before:absolute before:left-3 before:h-full before:w-px before:bg-secondary-200 dark:before:bg-secondary-700">
+            <div className="relative space-y-4 before:absolute before:left-3 before:w-px before:bg-secondary-200 dark:before:bg-secondary-700">
                 {experience.positions.map((position, index) => (
                     <ExperiencePositionItem
                         key={position.id}

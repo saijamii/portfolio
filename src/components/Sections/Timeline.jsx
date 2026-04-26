@@ -5,7 +5,7 @@ import { Panel, PanelHeader, PanelTitle } from "../ui/Panel";
 const experiencesData = [
   {
     companyName: "Aerosimple",
-    companyLogo: 'https://play-lh.googleusercontent.com/JGft7r6E9F0QrqcW7G-VFiCfWaYkzNPp0osDU_8iKAbYyW2sKGr5r48oT9p5j3m8duM=w480-h960-rw',
+    companyLogo: 'https://res.cloudinary.com/dkf7zjdju/image/upload/v1777193100/1630636582675_wnxy2f.jpg',
     isCurrentEmployer: true,
     positions: [
       {
@@ -14,8 +14,6 @@ const experiencesData = [
         employmentPeriod: "Sep 2022 - ♾️",
         employmentType: "Full-time",
         icon: "code",
-        description:
-          "Implemented validation logic for custom date and date-time fields, handling edge cases such as timezone differences, min/max constraints, and dependent field rules.",
         skills: ["React", "JavaScript", "Redux", "GitLab"],
         isExpanded: true,
       },
@@ -23,7 +21,7 @@ const experiencesData = [
   },
   {
     companyName: "Unosimple Technologies",
-    companyLogo: 'https://media.licdn.com/dms/image/v2/C4E0BAQH7QsknRhFBKQ/company-logo_200_200/company-logo_200_200/0/1630608240233/unosimple_logo?e=1768435200&v=beta&t=gW9feUZDDQ9ATR0oF41iwOEOJQRtHpigJGwVRK7zxN0',
+    companyLogo: 'https://res.cloudinary.com/dkf7zjdju/image/upload/v1777193100/unosimple_logo_v9he8z.jpg',
     isCurrentEmployer: false,
     positions: [
       {
