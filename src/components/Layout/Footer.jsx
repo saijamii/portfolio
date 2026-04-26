@@ -6,9 +6,9 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-secondary-200 dark:border-secondary-700 mt-12 p-4 text-center text-secondary-600 dark:text-secondary-400">
-      <div className="mx-auto border-x border-secondary-200 dark:border-secondary-700 pt-4 md:max-w-4xl bg-white dark:bg-secondary-900">
-        <div className="flex flex-col items-center gap-6">
+    <footer className="screen-line-after border-x border-edge p-4 text-center">
+      <div className="mx-auto  md:max-w-4xl ">
+        <div className="flex flex-col gap-6">
           <FooterSocials />
         </div>
       </div>
@@ -19,7 +19,7 @@ export const Footer = () => {
 const FooterSocials = () => {
   return (
     <div className="flex w-full relative z-10">
-      <div className="mx-auto flex items-center justify-center gap-3 bg-white dark:bg-secondary-900 px-4">
+      <div className="mx-auto flex items-center justify-center gap-3 px-4">
         <SocialLink href="https://github.com/saijamii" icon={Github} label="GitHub" />
         <SocialLink href="https://www.linkedin.com/in/saijamii/" icon={Linkedin} label="LinkedIn" />
         <SocialLink href="mailto:saijami38@gmail.com" icon={Mail} label="Email" />

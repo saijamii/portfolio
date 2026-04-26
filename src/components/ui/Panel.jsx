@@ -1,51 +1,74 @@
 import { Slot as SlotPrimitive } from "@radix-ui/react-slot";
 import React from "react";
+import PropTypes from "prop-types";
 import { cn } from "../../lib/utils";
 
 const Slot = SlotPrimitive;
 
-function Panel({ className, ...props }) {
+const Panel = React.forwardRef(({ className, ...props }) => {
     return (
         <section
             data-slot="panel"
             className={cn(
-                "screen-line-before screen-line-after border-x border-edge dark:border-white/10",
+                "screen-line-before screen-line-after border-x border-edge",
                 className
             )}
             {...props}
         />
     );
-}
+});
 
-function PanelHeader({ className, ...props }) {
+Panel.displayName = "Panel";
+
+Panel.propTypes = {
+    className: PropTypes.string,
+};
+
+const PanelHeader = React.forwardRef(({ className, ...props }, ref) => {
     return (
         <header
+            ref={ref}
             data-slot="panel-header"
             className={cn("screen-line-after px-4", className)}
             {...props}
         />
     );
-}
+});
 
-function PanelTitle({
+PanelHeader.displayName = "PanelHeader";
+
+PanelHeader.propTypes = {
+    className: PropTypes.string,
+};
+
+const PanelTitle = React.forwardRef(({
     className,
     asChild = false,
     ...props
-}) {
+}, ref) => {
     const Comp = asChild ? Slot : "h2";
 
     return (
         <Comp
+            ref={ref}
             data-slot="panel-title"
             className={cn("text-3xl font-semibold", className)}
             {...props}
         />
     );
-}
+});
 
-function PanelTitleSup({ className, ...props }) {
+PanelTitle.displayName = "PanelTitle";
+
+PanelTitle.propTypes = {
+    className: PropTypes.string,
+    asChild: PropTypes.bool,
+};
+
+const PanelTitleSup = React.forwardRef(({ className, ...props }, ref) => {
     return (
         <sup
+            ref={ref}
             className={cn(
                 "-top-[0.75em] ml-1 text-sm font-medium text-muted-foreground select-none",
                 className
@@ -53,12 +76,24 @@ function PanelTitleSup({ className, ...props }) {
             {...props}
         />
     );
-}
+});
 
-function PanelContent({ className, ...props }) {
+PanelTitleSup.displayName = "PanelTitleSup";
+
+PanelTitleSup.propTypes = {
+    className: PropTypes.string,
+};
+
+const PanelContent = React.forwardRef(({ className, ...props }, ref) => {
     return (
-        <div data-slot="panel-body" className={cn("p-4", className)} {...props} />
+        <div ref={ref} data-slot="panel-body" className={cn("p-4", className)} {...props} />
     );
-}
+});
+
+PanelContent.displayName = "PanelContent";
+
+PanelContent.propTypes = {
+    className: PropTypes.string,
+};
 
 export { Panel, PanelContent, PanelHeader, PanelTitle, PanelTitleSup };

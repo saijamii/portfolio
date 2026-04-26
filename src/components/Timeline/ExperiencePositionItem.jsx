@@ -16,7 +16,7 @@ const ExperiencePositionItem = memo(({ position, isLast }) => {
     const toggleOpen = () => setIsOpen(prev => !prev);
 
     return (
-        <div className={`relative ${isLast ? 'before:absolute before:h-full before:w-4 before:bg-white dark:before:bg-secondary-400' : ''}`}>
+        <div className={`relative ${isLast ? 'before:absolute before:h-full before:w-4 before:bg-white dark:before:bg-secondary-900' : ''}`}>
             <button
                 onClick={toggleOpen}
                 className="group/experience block w-full text-left select-none relative before:absolute before:-top-1 before:-right-1 before:-bottom-1.5 before:left-7 before:-z-1 before:rounded-lg hover:before:bg-secondary-100 dark:hover:before:bg-secondary-700 transition-colors"
@@ -69,7 +69,15 @@ const ExperiencePositionItem = memo(({ position, isLast }) => {
             >
                 {position.description && (
                     <div className="pt-2 pl-9 text-sm text-secondary-700 dark:text-secondary-300 font-mono">
-                        <p>{position.description}</p>
+                        {Array.isArray(position.description) ? (
+                            <ul className="list-disc list-inside space-y-1">
+                                {position.description.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
+                        ) : (
+                            <p>{position.description}</p>
+                        )}
                     </div>
                 )}
 

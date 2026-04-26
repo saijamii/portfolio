@@ -4,26 +4,47 @@ import { Panel, PanelHeader, PanelTitle } from "../ui/Panel";
 
 const experiencesData = [
   {
-    companyName: "Unosimple Technologies",
-    companyLogo: null,
+    companyName: "Aerosimple",
+    companyLogo: 'https://res.cloudinary.com/dkf7zjdju/image/upload/v1777193100/1630636582675_wnxy2f.jpg',
     isCurrentEmployer: true,
+    positions: [
+      {
+        id: "aerosimple-frontend-dev",
+        title: "Frontend Developer",
+        employmentPeriod: "Sep 2022 - ♾️",
+        employmentType: "Full-time",
+        icon: "code",
+        skills: ["React", "JavaScript", "Redux", "GitLab"],
+        isExpanded: true,
+      },
+    ],
+  },
+  {
+    companyName: "Unosimple Technologies",
+    companyLogo: 'https://res.cloudinary.com/dkf7zjdju/image/upload/v1777193100/unosimple_logo_v9he8z.jpg',
+    isCurrentEmployer: false,
     positions: [
       {
         id: "unosimple-frontend-dev",
         title: "Frontend Developer",
-        employmentPeriod: "2022 - Present",
+        employmentPeriod: "Aug 2022 - Aug 2025",
         employmentType: "Full-time",
         icon: "code",
-        description:
-          "Lead the frontend development team in building responsive and accessible web applications. Implemented modern best practices and improved performance by 40%.",
-        skills: ["React", "JavaScript", "Redux", "Bitbucket"],
+        description: [
+          "Engineered a scalable B2B/B2C SaaS platform managing 700K+ SKUs with server-side pagination across Inventory, Warehouse, POS, and Supplier modules.",
+          "Reduced page load time by bundle size 72% (2.27 MB → 615 KB) via Webpack‑driven lazy loading and code splitting",
+          "Adopted React Query for efficient API caching, background data synchronization, and stale data handling—cutting redundant API calls by 35%.",
+          "Implemented role‑based access control to dynamically render features by permission, enhancing security and streamlining maintenance.",
+          "Deployed a partial cancellation feature, enabling users to cancel specific item quantities (e.g., 3 out of 10), increasing order flexibility and customer control.",
+        ],
+        skills: ["JavaScript", "React", "RTK" , "React Query","Bitbucket"],
         isExpanded: true,
       },
     ],
   },
   {
     companyName: "Gayatri Vidya Parishad",
-    companyLogo: null,
+    companyLogo: "https://www.gvpce.ac.in/gvp/images/logo.jpg",
     isCurrentEmployer: false,
     positions: [
       {
@@ -51,7 +72,7 @@ export const Timeline = forwardRef((props, ref) => {
           id="timeline-heading"
           className="dark:text-white text-gray-900"
         >
-          My Journey
+          Timeline
         </PanelTitle>
       </PanelHeader>
 

@@ -1,17 +1,29 @@
 import React from "react";
 import { cn } from "../../lib/utils";
 
-function Separator({ className }) {
+export const Separator = React.forwardRef(({ className }, ref) => {
     return (
         <div
+            ref={ref}
             className={cn(
-                "relative flex h-8 w-full border-x border-edge",
-                "before:absolute before:-left-[100vw] before:z-[-1] before:h-8 before:w-[200vw]",
-                "before:bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_0,transparent_50%)] before:bg-size-[10px_10px] pattern-edge",
+                "relative flex h-8 w-full border-x border-edge pattern-edge",
+
+                // pseudo element core
+                "before:content-[''] before:absolute before:top-0 before:-left-[100vw]",
+                "before:z-[10] before:h-8 before:w-[200vw]",
+
+                // background pattern
+                "before:bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_1px,transparent_50%)]",
+
+                // your converted properties
+                "before:[background-size:10px_10px]",
+                "before:border before:border-solid before:border-secondary-200 dark:before:border-edge",
+
                 className
             )}
+
         />
     );
-}
+});
 
-export { Separator };
+Separator.displayName = "Separator";

@@ -29,7 +29,7 @@ const ExperienceItem = memo(({ experience }) => {
                 {experience.isCurrentEmployer && <StatusPing />}
             </div>
 
-            <div className="relative space-y-4 before:absolute before:left-3 before:h-full before:w-px before:bg-secondary-200 dark:before:bg-secondary-700">
+            <div className="relative space-y-4 before:absolute before:left-3 before:w-px before:bg-secondary-200 dark:before:bg-secondary-700">
                 {experience.positions.map((position, index) => (
                     <ExperiencePositionItem
                         key={position.id}
@@ -49,6 +49,7 @@ ExperienceItem.propTypes = {
         companyName: PropTypes.string.isRequired,
         companyLogo: PropTypes.string,
         isCurrentEmployer: PropTypes.bool,
+        description :  PropTypes.array ||  PropTypes.string,
         positions: PropTypes.arrayOf(
             PropTypes.shape({
                 id: PropTypes.string.isRequired,
@@ -56,7 +57,7 @@ ExperienceItem.propTypes = {
                 employmentPeriod: PropTypes.string.isRequired,
                 employmentType: PropTypes.string,
                 icon: PropTypes.string,
-                description: PropTypes.string,
+                description: PropTypes.string || PropTypes.array,
                 skills: PropTypes.arrayOf(PropTypes.string),
                 isExpanded: PropTypes.bool,
             })

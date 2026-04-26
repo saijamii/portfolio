@@ -5,12 +5,18 @@
 @layer base {
   :root {
     --color-edge: #B6BFB8;
-    --border: 0 0% 73%; /* Light mode border */
+    --border: 0 0% 73%;
+    /* Light mode border */
+    --pattern-foreground: rgba(138, 138, 138, 0.429);
+    --edge: rgba(0, 0, 0, 0.3);
   }
 
   .dark {
     --color-edge: #232925;
-    --border: 0 0% 14%; /* Dark mode border */
+    --border: 0 0% 50%;
+    /* Dark mode border */
+    --pattern-foreground: rgba(255, 255, 255, 0.344);
+    --edge: rgba(255, 255, 255, 0.79);
   }
 
   body {
@@ -56,11 +62,11 @@
   }
 
   .btn-primary {
-    @apply px-6 py-2 bg-primary-800  text-white rounded-md transition-colors duration-300 font-medium;
+    @apply px-6 py-2 bg-primary-800 text-white rounded-md transition-colors duration-300 font-medium;
   }
 
   .btn-secondary {
-    @apply px-6 py-2 bg-secondary-200 dark:bg-secondary-700 hover:bg-secondary-300 dark:hover:bg-secondary-600  dark:text-white rounded-md transition-colors duration-300 font-medium;
+    @apply px-6 py-2 bg-secondary-200 dark:bg-secondary-700 hover:bg-secondary-300 dark:hover:bg-secondary-600 dark:text-white rounded-md transition-colors duration-300 font-medium;
   }
 
   .btn-outline {
@@ -80,7 +86,7 @@
   }
 
   .section-subtitle {
-    @apply text-xl sm:text-2xl font-medium mb-8 text-secondary-400 ;
+    @apply text-xl sm:text-2xl font-medium mb-8 text-secondary-400;
   }
 
   .input-field {
